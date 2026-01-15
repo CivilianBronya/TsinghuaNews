@@ -1,0 +1,29 @@
+{
+  "project": {
+    "name": "TsinghuaNews",
+    "target": "清华大学 - 最新动态",
+    "description": "清华大学官网新闻列表采集",
+    "fetch_detail": true,
+    "detail_limit": 100
+  },
+
+  "crawl": {
+    "base_url": "https://www.tsinghua.edu.cn",
+    "start_url": "https://www.tsinghua.edu.cn/news/zxdt.htm",
+    "sleep_seconds": 1,
+    "timeout_seconds": 10
+  },
+
+  "retry": {
+    "enable": true,
+    "max_times": 3,
+    "interval_seconds": 2,
+    "description": "针对于因网络问题或对方服务器问题导致的爬取失败进行重试"
+  },
+
+  "debug": {
+    "enable": true,
+    "max_pages": 10,
+    "description": "debug测试，通常来说debug不需要爬取一堆内容"
+  }
+}

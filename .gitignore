@@ -1,0 +1,22 @@
+# virtual env
+.venv/
+venv/
+
+# idea
+.idea/
+
+# logs
+logs/*.log
+
+# output files
+output/**/*.txt
+output/**/*.xlsx
+output/**/*.csv
+output/news/**
+
+# python cache
+__pycache__/
+*.pyc
+
+# env local override
+.env.local
